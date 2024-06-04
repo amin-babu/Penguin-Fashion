@@ -4,6 +4,16 @@
   font-family: "Roboto", sans-serif;
 }
 
+
+.container{
+  padding: 30px 8%;
+} 
+
+.heading{
+  font-size: 35px;
+  color: #363958;
+}
+
 .primary-btn{
   display: flex;
   width: 130px;
@@ -37,7 +47,7 @@
 }
 
 .logo img{
-  width: 250px;
+  width: 280px;
   cursor: pointer;
 }
 
@@ -87,10 +97,55 @@
   display: none;
 }
 
+/* women section */
 
+.women-container{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.podurct-img{
+  width: 200px;
+  background-color: #F1F1F1;
+  padding: 15px 40px;
+  border-radius: 8px;
+}
+
+.cart{
+  height: auto;
+  width: 280px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.cart-head{
+  margin: 7px 0;
+  color: #363958;
+}
+
+.cart p{
+  font-size: small;
+  margin-bottom: 12px;
+}
+
+.cart-action{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-action h3{
+  font-size: 30px;
+  color: #FABE4C;
+}
 /* responsiveness */
 
 @media screen and (max-width:780px) {
+  .navber{
+    padding: 20px 4%;
+  }
   .menu{
     display: none;
   }
@@ -105,7 +160,7 @@
 
   .banner{
     flex-direction: column;
-    padding-top: 50px;
+    padding: 50px 4% 0;
     height: auto;
   }
 
@@ -115,5 +170,24 @@
 
   .banner-right img{
     height: 100%;
+  }
+
+  .logo img{
+    width: 240px;
+  }
+
+  /* women section */
+
+  .heading{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .women-container{
+    flex-direction: column;
+  }
+
+  .cart{
+    margin: 20px 0;
   }
 }
